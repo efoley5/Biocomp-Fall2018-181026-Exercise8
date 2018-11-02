@@ -1,3 +1,5 @@
+#Question 1 
+
 #read document as a tables
 game=read.table("UWvMSU_1-22-13.txt",stringsAsFactors = F, header = T)
 head(game)
