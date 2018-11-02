@@ -25,20 +25,23 @@ lines(game$time, both_teams_total$MSU, type = "l", col="green")
 
 #Question 2 
 
-
+# generates a random numer from 1 to 100
 number_guess <- sample(1:100, 1) 
-guess <- function(guess){
-  if (guess > number_guess){
+#prints prompt
+print("I'm thinking of a numer 1-100. Input(#) to guess")
+#make a function to guess number 
+input <- function(input){
+  if (input > number_guess){
     print("Lower")
   }else{ 
-    if (guess < number_guess){
+    if (input < number_guess){
       print("Higher")
     }else{ 
-      if (guess == number_guess)
+      if (input == number_guess)
         print( "Correct!")
       
     }
   }
 }
-guess(7)
-guess(8)
+input(7)
+input(81)
